@@ -4,3 +4,6 @@
     border-style: dashed;
     height: 200px;
 }
+.card{
+    float: left;
+}

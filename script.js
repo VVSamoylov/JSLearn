@@ -1,8 +1,8 @@
 //AJAX, сетевые API fetch, promise
 //https://api.thecatapi.com/v1/images/search  cat  array dogs https://random.dog/doggos https://random.dog/  https://dog.ceo/api/breeds/image/random
-/*
+
 function createImg(url){
-    let card = document.getElementById("fch").content;
+    let card = document.getElementById("fch").content.cloneNode(true);
     let img = card.querySelector('img');
     img.setAttribute("src", url);
     document.body.appendChild(card);
@@ -13,11 +13,11 @@ function pars(a){
        
     createImg(a.message);
 }
-
+for(let i = 0; i <10; i++){
   fetch('https://dog.ceo/api/breeds/image/random')
     .then(a=>a.json())
     .then(c => pars(c));
- */
+}
 //BOM коротко
 // события два метода назначения обработчика, всплытие и погружение, параметры события объект event
 ///шаблоны в DOM
