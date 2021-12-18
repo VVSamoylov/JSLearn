@@ -18,6 +18,17 @@ for(let i = 0; i <10; i++){
     .then(a=>a.json())
     .then(c => pars(c));
 }
+
+//function testEvent(event){
+//    console.log(event);
+//}
+
+//let temp = document.getElementById("tmp").content.cloneNode(true);
+//window.addEventListener('mousemove', testEvent);
+//let lnk = temp.querySelector("a");
+//lnk.addEventListener("click", testEvent);
+//document.body.appendChild(temp);
+//console.log(lnk);
 //BOM коротко
 // события два метода назначения обработчика, всплытие и погружение, параметры события объект event
 ///шаблоны в DOM
@@ -35,15 +46,15 @@ for(let i = 0; i <10; i++){
 //console.log(h1);
 //console.log(document.body);
 //console.table(document.body.childNodes[0]);
-/*
-let el = document.createElement("div");
-el.className = "classBorder";
-document.body.appendChild(el);
-let h1 = document.createElement("h1");
-h1.innerText = "Привет программист!!!";
-el.appendChild(h1);
-el.removeChild(h1);
-*/
+
+//let el = document.createElement("div");
+//el.className = "classBorder";
+//document.body.appendChild(el);
+//let h1 = document.createElement("h1");
+//h1.innerText = "Привет программист!!!";
+//el.appendChild(h1);
+//el.removeChild(h1);
+
 //классы
 /*
 class Dog{
@@ -86,13 +97,13 @@ class Dog{
 let sh = new Dog("Шарик", "Двортерьер", 1000);
 sh.speak();
 console.log(sh.poroda);
-sh.sAge(2);
+sh.sAge(-2);
 */
 //строки методы работы со строками, слайсы
 //let str = "Привет студентам клуба программистов";
 //res = str.slice(5,25);
 //console.log(res);
-///let arr = str.split(" ");
+//let arr = str.split(" ");
 //let arr =  str.replace("программистов", "вокалистов");
 //console.table(arr);
 //res = str.toUpperCase();
@@ -108,7 +119,7 @@ sh.sAge(2);
 //let [Sveta, Tana, Vala, Ula, Ket, Masha] = m;
 //console.log(Vala);
 //методы массива
-//m.forEach((a)=>console.log(a));
+//m.forEach((a)=>console.log(a));/*
 /*
 let r = m.filter(str=>{
     return (str.search("[я]") != -1)
